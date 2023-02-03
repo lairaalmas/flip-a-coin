@@ -15,7 +15,7 @@ botao.addEventListener("click", function () {
   const result = generateValue() === 0 ? "heads" : "tails";
   setTimeout(function () {
     moeda.classList.remove("flip");
-    moeda.innerHTML = `<img src="../assets/${result}.svg"/><span>${result}</span>`;
+    moeda.innerHTML = `<span>${result}</span>`;
     moeda.classList.add("-bgDefault");
     moeda.classList.remove("-bgFlip");
     callback();
